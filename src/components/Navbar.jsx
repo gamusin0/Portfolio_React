@@ -47,13 +47,15 @@ export const Navbar =() => {
         </div>
 
         {/*Versión moviiil*/}
+        {/* Botón móvil */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50"
+          className="md:hidden p-2 text-foreground z-[999] absolute top-4 right-4"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
+
 
         <div
             className={cn(
