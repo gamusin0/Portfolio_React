@@ -81,7 +81,7 @@ export const ContactMeSection = () => {
 
                         </div>
 
-                        {/*TELEFONO*/}
+                        {/*LINKEDIN*/}
 
                         <div className="flex items-start space-x-4">
                             <div className="p-3 rounded-full bg-primary/10">
