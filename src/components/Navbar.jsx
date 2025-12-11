@@ -47,7 +47,6 @@ export const Navbar =() => {
         </div>
 
         {/*Versión moviiil*/}
-        {/* Botón móvil */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-[999] absolute top-4 right-4"
