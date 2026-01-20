@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from "lucide-react"
 import web_portfolio from "../assets/projects/web_portfolio.png"
+import cifrado_cesar from "../assets/projects/cifrado_cesar.png"
 
 const projects = [
     {
@@ -8,6 +9,15 @@ const projects = [
         description: "Portfolio personal de AlejandraH, desarrollado con React y Tailwind CSS. Presenta proyectos, habilidades y experiencia de manera atractiva y profesional.",
         image: web_portfolio,
         tags: ["React", "Tailwind CSS", "JavaScript"],
+        demoURL: "#",
+        githuibURL:"#"
+    },
+    {
+        id: 2,
+        tittle: "Cifrado César",
+        description: "Mini aplicación web que cifra texto usando el algoritmo de César.",
+        image: cifrado_cesar,
+        tags: ["JavaScript", "CSS", "Html"],
         demoURL: "#",
         githuibURL:"#"
     }
@@ -65,6 +75,7 @@ export const ProjectSection = () => {
 
 
         </div>
+        
     </div>
 
     </section>

@@ -1,3 +1,4 @@
+import cv_AlejandraH from "../assets/cv/cv_AlejandraH.pdf"
 import { Code, User, Briefcase } from "lucide-react"
 export const AboutMe = () => {
 
@@ -29,7 +30,7 @@ export const AboutMe = () => {
                             Contactame!
                         </a>
                         <a href="{cv_AlejandraH}"
-                        download= "../assets/cv/cv_AlejandraH.pdf"
+                        download="cv_AlejandraH.pdf"
                         className="px-6 py-2 rounded-full bg-white text-primary border border-primary hover:bg-primary/90 transition-colors duration-300 text-center">
                             {" "}
                             Descárgate mi CV
