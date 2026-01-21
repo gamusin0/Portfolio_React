@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from "lucide-react"
+import { useState } from "react"
 import web_portfolio from "../assets/projects/web_portfolio.png"
 import cifrado_cesar from "../assets/projects/cifrado_cesar.png"
 import { ProjectModal } from "./ProjectModal"
