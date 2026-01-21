@@ -10,7 +10,7 @@ export const ProjectModal = ({ open, onClose, demoUrl }) => {
       />
 
       {/* Modal */}
-      <div className="relative bg-card w-[90%] h-[90%] rounded-xl overflow-hidden z-10">
+      <div className="bg-card rounded-lg p-6 max-w-xl w-full">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 z-20 text-white"
