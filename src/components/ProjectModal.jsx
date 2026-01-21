@@ -1,27 +1,44 @@
-export const ProjectModal = ({ open, onClose, demoUrl }) => {
+import { useEffect } from "react";
+
+export const ProjectModal = ({ open, demoUrl, onClose }) => {
+  // Bloquear scroll del body mientras está abierto
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    // Limpieza al desmontar
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
-      {/* Overlay */}
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+      onClick={onClose} // cerrar al hacer click fuera del contenido
+    >
       <div
-        className="absolute inset-0 bg-black/70"
-        onClick={onClose}
-      />
-
-      {/* Modal */}
-      <div className="relative bg-card w-[90%] h-[90%] rounded-xl overflow-hidden z-10">
+        className="bg-card rounded-xl p-4 w-full max-w-lg md:max-w-xl shadow-lg relative"
+        onClick={(e) => e.stopPropagation()} // evita cerrar al click dentro
+      >
+        {/* Botón cerrar */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 text-white"
+          className="absolute top-3 right-3 text-white hover:text-primary text-xl font-bold"
         >
           ✕
         </button>
 
+        {/* Iframe del proyecto */}
         <iframe
           src={demoUrl}
-          className="w-full h-full border-0"
-          title="Project Demo"
+          className="w-full h-80 md:h-96 rounded"
+          title="Demo del proyecto"
         />
       </div>
     </div>
