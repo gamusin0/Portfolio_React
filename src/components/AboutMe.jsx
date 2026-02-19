@@ -14,7 +14,7 @@ export const AboutMe = () => {
                     <h3 className="text-2xl font-semibold"> 
                         ¡Hola! Soy una desarrolladora a la que le encanta cacharrear, construir cosas y resolver problemas.
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foregrounSd">
                         Me gustan los proyectos donde puedo aprender algo nuevo cada día, 
                         ya sea programando, diseñando una interfaz o ayudando a alguien con un problema técnico.
                     </p>
